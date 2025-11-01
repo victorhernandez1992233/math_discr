@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Algoritmos de Grafos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Visualizador de Algoritmos de Grafos 🌐</h1>
+    
+    <div class="toolbar">
+        <button id="bfsButton">Ejecutar BFS</button>
+        <button id="dfsButton">Ejecutar DFS</button>
+        <button id="resetButton">Limpiar Grafo</button>
+    </div>
+
+    <div id="status-panel">
+        <p><strong>Instrucciones:</strong></p>
+        <ol>
+            <li>Haz clic en el lienzo para <strong>crear un nodo</strong>.</li>
+            <li>Haz clic en un nodo y luego en otro para <strong>crear una arista</strong>.</li>
+            <li>Selecciona un algoritmo (BFS o DFS) y luego <strong>haz clic en el nodo de inicio</strong>.</li>
+        </ol>
+    </div>
+
+    <canvas id="graphCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
