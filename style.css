@@ -44,6 +44,14 @@ button#resetButton:hover {
     background-color: #c82333;
 }
 
+button#matrixButton {
+    background-color: #28a745;
+}
+
+button#matrixButton:hover {
+    background-color: #218838;
+}
+
 #status-panel {
     background: #fff;
     border: 1px solid #ddd;
@@ -59,14 +67,63 @@ button#resetButton:hover {
 }
 
 #status-panel ol {
-    margin: 0;
+    margin-top: 5px;
     padding-left: 20px;
+}
+
+#status-panel hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+#status-panel span {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #005a9c;
 }
 
 #graphCanvas {
     background-color: #ffffff;
     border: 2px solid #ddd;
     border-radius: 8px;
-    cursor: crosshair;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- NUEVOS ESTILOS PARA LA MATRIZ --- */
+#matrix-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+#matrix-container h2 {
+    color: #005a9c;
+}
+
+#matrix-container table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#matrix-container th,
+#matrix-container td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    min-width: 40px;
+    text-align: center;
+}
+
+#matrix-container th {
+    background-color: #f0f4f8;
+    color: #333;
+    font-weight: bold;
+}
+
+#matrix-container td {
+    background-color: #fff;
 }
